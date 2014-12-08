@@ -1,0 +1,30 @@
+{
+  "name": "youtubeseq-domain",
+  "version": "1.0.0",
+  "description": "Sequencies in youtube videos",
+  "main": "lib/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "youtube",
+    "sequencie"
+  ],
+  "author": "Carlos Villuendas <carlosvillu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "coffee-script": "^1.8.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.4",
+    "mocha": "^2.0.1"
+  },
+  "dependencies": {
+    "debug": "^2.1.0",
+    "nconf": "^0.7.1",
+    "youtube-node": "^1.1.2"
+  }
+}
