@@ -12,6 +12,7 @@
   ],
   "author": "Carlos Villuendas <carlosvillu@gmail.com>",
   "license": "MIT",
+  "provate": "true",
   "devDependencies": {
     "chai": "^1.10.0",
     "coffee-script": "^1.8.0",
@@ -23,6 +24,7 @@
     "mocha": "^2.0.1"
   },
   "dependencies": {
+    "bluebird": "^2.3.11",
     "debug": "^2.1.0",
     "nconf": "^0.7.1",
     "youtube-node": "^1.1.2"

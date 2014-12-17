@@ -1,8 +1,16 @@
+Promise = require 'bluebird'
 Service = require '../service'
+sequence = require 'sequence-titles'
+debug = require( 'debug' )
+log = debug( 'youtubeseq-log' )
+Promise = require 'bluebird'
 
 class SequenceForVideoService extends Service
   constructor: (@repository) ->
-  execute: (request, cb) ->
-    @repository.findByTitle request.title, cb
+  execute: Promise.method (request) ->
+    if !sequence.isSequence( request.title )
+      @repository.findByTitle request.title
+    else
+      Promise.all sequence.sequence( request.title ).map (title) => @repository.findByTitle title
 
 module.exports = SequenceForVideoService
