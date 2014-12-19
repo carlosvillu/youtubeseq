@@ -8,6 +8,7 @@ Promise = require 'bluebird'
 class SequenceForVideoService extends Service
   constructor: (@repository) ->
   execute: Promise.method (request) ->
+    log sequence.isSequence( request.title )
     if !sequence.isSequence( request.title )
       @repository.findByTitle request.title
     else

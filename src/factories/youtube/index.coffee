@@ -9,6 +9,8 @@ class YoutubeFactory
       when 'API'
         youTube = new YouTube()
         youTube.setKey config.get 'YOUTUBEAPI'
+        
+        # TODO: Singleton instance
         return new YoutubeAPIRepository youTube
 
 module.exports = YoutubeFactory

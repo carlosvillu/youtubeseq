@@ -4,6 +4,7 @@
   "description": "Sequencies in youtube videos",
   "main": "lib/",
   "scripts": {
+    "prepublish": "grunt coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,7 +13,6 @@
   ],
   "author": "Carlos Villuendas <carlosvillu@gmail.com>",
   "license": "MIT",
-  "provate": "true",
   "devDependencies": {
     "chai": "^1.10.0",
     "coffee-script": "^1.8.0",
@@ -27,6 +27,7 @@
     "bluebird": "^2.3.11",
     "debug": "^2.1.0",
     "nconf": "^0.7.1",
+    "sequence-titles": "^1.4.0",
     "youtube-node": "^1.1.2"
   }
 }
