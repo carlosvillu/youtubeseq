@@ -15,7 +15,7 @@ Dependencies:
         $ git clone https://github.com/carlosvillu/youtubeseq
         $ cd youtubeseq
         $ npm install
-
+*TIENES QUE COMPLETAR LA INFO EN CONFIG/SETTINGS.JSON*
 
 ### Description
 
